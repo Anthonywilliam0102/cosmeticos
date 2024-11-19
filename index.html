@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosméticos Premium</title>
+    <link rel="stylesheet" href="styles/globals.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <h1>BEAUTY ILUMINIÉ</h1>
+            <ul class="nav-links">
+                <li><a href="contato.html">Fale conosco</a></li>
+            </ul>
+            <div class="cart" id="cart-icon">
+                🛒  <span id="cart-count">0</span> Itens
+            </div>
+          
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Transforme sua Beleza</h2>
+            <p>Cosméticos Premium para cuidar de você de maneira única.</p>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters">
+        <input type="text" id="search" placeholder="Pesquise produtos..." class="search-bar">
+        <div class="filter-buttons">
+            <button class="filter-btn" data-category="all">Todos</button>
+            <button class="filter-btn" data-category="skin">Cuidado com a Pele</button>
+            <button class="filter-btn" data-category="makeup">Maquiagem</button>
+            <button class="filter-btn" data-category="hair">Cabelos</button>
+        </div>
+    </section>
+
+    <!-- Product List -->
+    <section class="product-list">
+        <!-- Products -->
+        <div class="product" data-id="1" data-category="makeup">
+            <img src="img/batom.png" alt="Produto 1">
+            <h3>Batom Ruby Red</h3>
+            <p class="price">R$ 49,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="2" data-category="skin">
+            <img src="img/creme.png" alt="Produto 2">
+            <h3>Creme Hidratante</h3>
+            <p class="price">R$ 79,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="3" data-category="hair">
+            <img src="img/mascara.png" alt="Produto 3">
+            <h3>Máscara Capilar</h3>
+            <p class="price">R$ 39,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Novos Produtos -->
+        <div class="product" data-id="4" data-category="skin">
+            <img src="img/envelhecimento.png" alt="Produto 4">
+            <h3>Loção Corporal Antienvelhecimento</h3>
+            <p class="price">R$ 89,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="5" data-category="makeup">
+            <img src="img/po.png" alt="Produto 5">
+            <h3>Pó Compacto Matte</h3>
+            <p class="price">R$ 45,00</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="6" data-category="hair">
+            <img src="img/shampoo.png" alt="Produto 6">
+            <h3>Shampoo Fortalecedor</h3>
+            <p class="price">R$ 69,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="7" data-category="skin">
+            <img src="img/pele.png" alt="Produto 7">
+            <h3>Peeling Facial</h3>
+            <p class="price">R$ 99,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="8" data-category="makeup">
+            <img src="img/base.png" alt="Produto 8">
+            <h3>Base Líquida</h3>
+            <p class="price">R$ 69,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="9" data-category="makeup">
+            <img src="img/blush.png" alt="Produto 9">
+            <h3>Blush Compacto</h3>
+            <p class="price">R$ 49,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+        <div class="product" data-id="10" data-category="hair">
+            <img src="img/oleo.png" alt="Produto 10">
+            <h3>Óleo Reparador para Cabelos</h3>
+            <p class="price">R$ 79,90</p>
+            <button class="add-to-cart">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h3>Seu Carrinho</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: R$ <span id="total-price">0,00</span></p>
+            <button class="checkout-btn">Finalizar Compra</button>
+            <button class="close-cart">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Beauty Premium. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>

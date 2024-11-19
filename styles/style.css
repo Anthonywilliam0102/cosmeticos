@@ -1,0 +1,110 @@
+/* Contato */
+.contact {
+ background: linear-gradient(135deg, #ff6f61, #ff9068, #6a0572, #1e90ff);
+background-size: 400% 400%;
+animation: gradient-move 8s infinite ease-in-out;
+color: #290101;
+padding: 6rem 2rem;
+text-align: center;
+position: relative; /* Alterado para 'relative' para que o Flexbox funcione corretamente */
+
+min-height: 100vh; 
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e65b54;
+}
+
+/* Modo escuro */
+.contact.dark-mode {
+    background-color: #121212;
+    color: #f7f7f7;
+}
+
+.contact.dark-mode .contact-form {
+    background-color: #333;
+}
+
+.contact.dark-mode .contact-form input,
+.contact.dark-mode .contact-form textarea {
+    background-color: #444;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.contact.dark-mode .submit-btn {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+.contact.dark-mode .submit-btn:hover {
+    background-color: #e65b54;
+}
+/* Estilo para o botão "Remover" */
+button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e03e3e;
+}
